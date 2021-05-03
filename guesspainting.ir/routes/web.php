@@ -14,7 +14,8 @@ use App\Http\Controllers\Frontend\UserController;
 */
 // Home Page
 Route::get('/', [UserController::class, 'index'])->name('home');
-Route::get('/play', [UserController::class, 'game'])->name('game.play');
+Route::get('/dashboard/play', [UserController::class, 'game'])->name('game.play');
+
 // Admin
 Route::group(['prefix' => 'admin'], function () {
     Route::get('/', [\App\Http\Controllers\Admin\UserController::class, 'index'])->name('admin');

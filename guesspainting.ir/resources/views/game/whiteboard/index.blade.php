@@ -1,3 +1,5 @@
-<h1>
-    white board
-</h1>
+<div>
+  <img src="pictures/<?php $random = rand(1, 2);
+                      echo $random;
+                      ?>.jpg">
+</div>

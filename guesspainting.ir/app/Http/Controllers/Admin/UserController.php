@@ -20,6 +20,7 @@ class UserController extends Controller
     {
         $user_data = [
             'word' => request()->input('word'),
+            'picture_name' => request()->input('picture_name'),
             'word_time' => request()->input('word_time'),
             'word_score' => request()->input('word_score'),
             'hardness_level' => request()->input('hardness_level'),

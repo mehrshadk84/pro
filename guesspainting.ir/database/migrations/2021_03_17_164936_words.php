@@ -16,6 +16,7 @@ class Words extends Migration
         Schema::create('words', function (Blueprint $table) {
             $table->id();
             $table->string('word');
+            $table->string('picture_name');
             $table->integer('hardness_level');
             $table->integer('word_time');
             $table->integer('word_score');

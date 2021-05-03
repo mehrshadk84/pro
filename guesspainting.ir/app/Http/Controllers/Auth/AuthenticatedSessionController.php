@@ -29,9 +29,8 @@ class AuthenticatedSessionController extends Controller
     public function store(LoginRequest $request)
     {
         $request->authenticate();
-
         $request->session()->regenerate();
-
+        $_SESSION['name'] = Auth::user()->name;
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 
@@ -48,7 +47,9 @@ class AuthenticatedSessionController extends Controller
         $request->session()->invalidate();
 
         $request->session()->regenerateToken();
-
+        if(file_exists("log.html") && filesize("log.html") > 0){
+            unlink("log.html");
+        }
         return redirect('/');
     }
 }

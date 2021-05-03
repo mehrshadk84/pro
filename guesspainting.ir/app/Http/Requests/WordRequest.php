@@ -25,6 +25,7 @@ class WordRequest extends FormRequest
     {
             $rules = [
                 'word' => 'required',
+                'picture_name' => 'required',
                 'word_time' => 'required|integer',
                 'word_score' => 'required|integer',
                 'hardness_level' => 'required',

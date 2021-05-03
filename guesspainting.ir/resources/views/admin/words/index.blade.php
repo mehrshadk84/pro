@@ -7,6 +7,7 @@
         <tr>
             <th style="text-align: center;">id</th>
             <th style="text-align: center;">word</th>
+            <th style="text-align: center;">picture_name</th>
             <th style="text-align: center;">word_time</th>
             <th style="text-align: center;">word_score</th>
             <th style="text-align: center;">hardness_level</th>

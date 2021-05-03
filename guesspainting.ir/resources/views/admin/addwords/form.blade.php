@@ -10,6 +10,10 @@
                 <input type="text" class="form-control" name="word" id="word" value="{{ old('word', isset($WordItem) ? $WordItem->word: '' )}} ">
             </div>
             <div class="form-group">
+                <label for="word">picture_name</label>
+                <input type="text" class="form-control" name="picture_name" id="picture_name" value="{{ old('picture_name', isset($WordItem) ? $WordItem->picture_name: '' )}} ">
+            </div>
+            <div class="form-group">
                 <label for="word_time">word_time</label>
                 <input type="text" class="form-control" name="word_time" id="word_time" value="{{ old('word_time', isset($WordItem) ? $WordItem->word_time: '' ) }} ">
             </div>
